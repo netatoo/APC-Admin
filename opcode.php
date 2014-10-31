@@ -328,6 +328,7 @@ for($i=20; $i>=0; $i--){
                     </thead>
                     <tbody>
                         <?php
+                        $i = 0;
                         foreach($cache['cache_list'] as $row){
                             if($row['type']=='file'){
                                 ?>
@@ -357,6 +358,7 @@ for($i=20; $i>=0; $i--){
                                 </tr>
                                 <?php
                             }
+                            if(++$i === (int) $MYREQUEST['COUNT']) break;
                         }
                         ?>
                     </tbody>

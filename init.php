@@ -110,7 +110,7 @@ if (empty($MYREQUEST['SCOPE'])) $MYREQUEST['SCOPE']="A";
 if (empty($MYREQUEST['SORT1'])) $MYREQUEST['SORT1']="H";
 if (empty($MYREQUEST['SORT2'])) $MYREQUEST['SORT2']="D";
 if (empty($MYREQUEST['OB']))	$MYREQUEST['OB']=OB_HOST_STATS;
-if (!isset($MYREQUEST['COUNT'])) $MYREQUEST['COUNT']=20;
+if (!isset($MYREQUEST['COUNT'])) $MYREQUEST['COUNT']=200;
 if (!isset($scope_list[$MYREQUEST['SCOPE']])) $MYREQUEST['SCOPE']='A';
 
 $MY_SELF=
